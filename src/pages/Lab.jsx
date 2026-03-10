@@ -1,16 +1,27 @@
+import LabHero from "../components/lab/LabHero";
+import LabOverview from "../components/lab/LabOverview";
+import LabHardware from "../components/lab/LabHardware";
+import LabStackGrid from "../components/lab/LabStackGrid";
+import LabServices from "../components/lab/LabServices";
+import LabMonitoring from "../components/lab/LabMonitoring";
+import LabArchitecture from "../components/lab/LabArchitecture";
+import LabGallery from "../components/lab/LabGallery";
+import LabLessons from "../components/lab/LabLessons";
+import LabFuture from "../components/lab/LabFuture";
+
 export default function Lab() {
   return (
-    <section className="py-16">
-      <p className="mb-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
-        Lab
-      </p>
-      <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
-        Infrastructure, experiments, and self-hosted systems.
-      </h1>
-      <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-        This is where I’ll highlight homelab work, Docker-based services,
-        self-hosting experiments, and the systems side of my developer journey.
-      </p>
-    </section>
+    <>
+      <LabHero />
+      <LabOverview />
+      <LabHardware />
+      <LabStackGrid />
+      <LabServices />
+      <LabMonitoring />
+      <LabArchitecture />
+      <LabGallery />
+      <LabLessons />
+      <LabFuture />
+    </>
   );
 }

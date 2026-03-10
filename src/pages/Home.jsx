@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-slate-400">
               <Cpu size={14} />
               Current Focus
@@ -72,7 +72,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-slate-400">
               <Layers size={14} />
               Core Stack
@@ -98,7 +98,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-slate-400">
               <Boxes size={14} />
               Lab Environment
@@ -112,7 +112,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <div className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-slate-400">
               <Wrench size={14} />
               Current Build
@@ -154,7 +154,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <article className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-400">
               Application
             </p>
@@ -171,7 +171,7 @@ export default function Home() {
             </p>
           </article>
 
-          <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <article className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-400">
               Client Project
             </p>
@@ -188,7 +188,7 @@ export default function Home() {
             </p>
           </article>
 
-          <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur">
+          <article className="rounded-2xl border border-white/10 bg-white/3 p-6 backdrop-blur">
             <p className="text-xs uppercase tracking-[0.25em] text-slate-400">
               Infrastructure
             </p>
