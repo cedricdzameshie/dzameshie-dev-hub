@@ -41,7 +41,7 @@ export default function Navbar() {
           </nav>
 
           <a
-            href="https://github.com/YOUR-GITHUB-USERNAME"
+            href="https://github.com/cedricdzameshie"
             target="_blank"
             rel="noreferrer"
             className="rounded-xl border border-cyan-400/30 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:border-cyan-300 hover:bg-cyan-400/10"
