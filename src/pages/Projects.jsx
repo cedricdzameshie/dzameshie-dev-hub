@@ -592,7 +592,7 @@ export default function Projects() {
                       playsInline
                       className="w-full"
                     >
-                      <source src="/bakery-demo.mp4" type="video/mp4" />
+                      <source src="/bakery-demo1.mp4" type="video/mp4" />
                     </video>
                   </div>
 
