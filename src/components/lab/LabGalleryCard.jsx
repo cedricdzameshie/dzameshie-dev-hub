@@ -1,8 +1,17 @@
-export default function LabGalleryCard({ title, description }) {
+export default function LabGalleryCard({ title, description, image, onClick }) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70 shadow-lg">
-      <div className="flex aspect-video items-center justify-center border-b border-white/10 bg-slate-800 text-sm text-slate-400">
-        Visual Placeholder
+    <article className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70 shadow-lg transition hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-cyan-950/30">
+      
+      {/* Clickable image */}
+      <div
+        className="aspect-video cursor-pointer overflow-hidden border-b border-white/10 bg-slate-800"
+        onClick={onClick}
+      >
+        <img
+          src={image}
+          alt={`${title} screenshot`}
+          className="h-full w-full object-cover transition duration-300 hover:scale-105"
+        />
       </div>
 
       <div className="p-5">
