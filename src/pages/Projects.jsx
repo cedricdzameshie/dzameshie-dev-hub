@@ -403,7 +403,7 @@ export default function Projects() {
                       playsInline
                       className="w-full"
                     >
-                      <source src="/job-tracker-demo2.mp4" type="video/mp4" />
+                      <source src="/job-tracker-demo.mp4" type="video/mp4" />
                     </video>
                   </div>
 
@@ -777,7 +777,7 @@ export default function Projects() {
               playsInline
               className="w-full"
             >
-              <source src="/homelab-demo.mp4" type="video/mp4" />
+              <source src="/homelab-demo2.mp4" type="video/mp4" />
             </video>
           </div>
 
