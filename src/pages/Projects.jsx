@@ -181,88 +181,63 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* =========================
-            SUBSECTION: PROJECT SELECTOR
-        ========================= */}
-        <div className="sticky top-20 z-30 mt-10 border-y border-white/10 bg-slate-950/85 py-4 backdrop-blur">
-          <div className="grid gap-4 md:grid-cols-3">
-            <button
-              type="button"
-              onClick={() => handleProjectChange("job-tracker")}
-              className={`rounded-2xl p-4 text-left transition ${
-                activeProject === "job-tracker"
-                  ? "border border-cyan-400/30 bg-cyan-400/10"
-                  : "border border-white/10 bg-white/[0.03] hover:border-cyan-400/30 hover:bg-white/[0.05]"
-              }`}
-            >
-              <p
-                className={`text-xs uppercase tracking-[0.25em] ${
-                  activeProject === "job-tracker"
-                    ? "text-cyan-300"
-                    : "text-slate-400"
-                }`}
-              >
-                Application
-              </p>
-              <h3 className="mt-2 text-base font-semibold text-white">
-                Job Tracker App
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-slate-300">
-                Workflow tracking, filters, status updates, and practical React
-                problem solving.
-              </p>
-            </button>
+       {/* =========================
+    SUBSECTION: PROJECT SELECTOR
+========================= */}
+<div className="sticky top-20 z-30 mt-10 border-y border-white/10 bg-slate-950/85 py-3 backdrop-blur">
+  <div className="flex gap-3 overflow-x-auto pb-1 md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
+    {[
+      {
+        id: "job-tracker",
+        eyebrow: "Application",
+        title: "Job Tracker App",
+        description:
+          "Workflow tracking, filters, status updates, and practical React problem solving.",
+      },
+      {
+        id: "bakery",
+        eyebrow: "Client Project",
+        title: "Bakery Ordering Platform",
+        description:
+          "Product presentation, pricing logic, and a real business use case.",
+      },
+      {
+        id: "lab",
+        eyebrow: "Infrastructure",
+        title: "Self-Hosted Lab",
+        description:
+          "Docker, Raspberry Pi, self-hosting, and hands-on systems learning.",
+      },
+    ].map((project) => (
+      <button
+        key={project.id}
+        type="button"
+        onClick={() => handleProjectChange(project.id)}
+        className={`min-w-[240px] rounded-2xl p-4 text-left transition sm:min-w-[280px] md:min-w-0 ${
+          activeProject === project.id
+            ? "border border-cyan-400/30 bg-cyan-400/10"
+            : "border border-white/10 bg-white/[0.03] hover:border-cyan-400/30 hover:bg-white/[0.05]"
+        }`}
+      >
+        <p
+          className={`text-[10px] uppercase tracking-[0.22em] sm:text-xs ${
+            activeProject === project.id ? "text-cyan-300" : "text-slate-400"
+          }`}
+        >
+          {project.eyebrow}
+        </p>
 
-            <button
-              type="button"
-              onClick={() => handleProjectChange("bakery")}
-              className={`rounded-2xl p-4 text-left transition ${
-                activeProject === "bakery"
-                  ? "border border-cyan-400/30 bg-cyan-400/10"
-                  : "border border-white/10 bg-white/[0.03] hover:border-cyan-400/30 hover:bg-white/[0.05]"
-              }`}
-            >
-              <p
-                className={`text-xs uppercase tracking-[0.25em] ${
-                  activeProject === "bakery" ? "text-cyan-300" : "text-slate-400"
-                }`}
-              >
-                Client Project
-              </p>
-              <h3 className="mt-2 text-base font-semibold text-white">
-                Bakery Ordering Platform
-              </h3>
-              <p className="mt-2 text-sm leading-6 text-slate-300">
-                Product presentation, pricing logic, and a real business use case.
-              </p>
-            </button>
+        <h3 className="mt-2 text-sm font-semibold text-white sm:text-base">
+          {project.title}
+        </h3>
 
-            <button
-  type="button"
-  onClick={() => handleProjectChange("lab")}
-  className={`rounded-2xl p-4 text-left transition ${
-    activeProject === "lab"
-      ? "border border-cyan-400/30 bg-cyan-400/10"
-      : "border border-white/10 bg-white/[0.03] hover:border-cyan-400/30 hover:bg-white/[0.05]"
-  }`}
->
-  <p
-    className={`text-xs uppercase tracking-[0.25em] ${
-      activeProject === "lab" ? "text-cyan-300" : "text-slate-400"
-    }`}
-  >
-    Infrastructure
-  </p>
-  <h3 className="mt-2 text-base font-semibold text-white">
-    Self-Hosted Lab
-  </h3>
-  <p className="mt-2 text-sm leading-6 text-slate-300">
-    Docker, Raspberry Pi, self-hosting, and hands-on systems learning.
-  </p>
-</button>
-          </div>
-        </div>
-
+        <p className="mt-2 line-clamp-2 text-xs leading-5 text-slate-300 sm:text-sm sm:leading-6">
+          {project.description}
+        </p>
+      </button>
+    ))}
+  </div>
+</div>
         {/* =========================
             PROJECT BLOCK: JOB TRACKER
         ========================= */}
